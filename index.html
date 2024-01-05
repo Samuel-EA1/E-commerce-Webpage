@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div id="row1">
+            <img src="Vista Logo.jpg" alt="Website Logo">
+        </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#row2">Our Products</a></li>
+                <li><a href="#cart-row">Cart</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-info">Contact</a></li>
+            </ul>
+
+            <div class="dropdown" id="dropdown1">
+                <h1 onclick="showDropDown()">&#9776;</h1>
+            </div>
+            <div class="cancel" id="cancel">
+                <h1 onclick="hideDropDown()">&#10006</h1>
+            </div>
+    </nav>
+    <div class="mob-navlist" id="mob-navlist">
+        <ul>
+            
+            <li><a href="">Home</a></li>
+            <li><a href="#row2">Our Products</a></li>
+            <li><a href="#cart-row">Cart</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-info">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="Intro-text">
+            <div class="welcome-header">
+                <h1>Vista</h1>
+            </div>
+            <div>
+                <p>Welcome to Vista!<br>Your Ultimate Style Destination! Discover a curated
+                    selection of accessories, clothing,<br> beauty essentials, and more, meticulously
+                    chosen to elevate your style and enhance your lifestyle.<br>Dive into a world of fashion-forward trends,
+                    quality craftmanship, and unparalleled elegance.<br> Happy shopping!
+            </div>
+            <div>
+                <button>Get Started</button>
+            </div>
+        </div>
+
+        <div class="row2" id="row2">
+            <div>
+                <h1>New Collections</h1>
+            </div>
+
+             <div class="product-imgs-row1">
+                <div class="prdct-1">
+                    <img src="ties.jpg" alt="Ties">
+                    <div>
+                        <h3>Ties</h3>
+                        <div class="details-btn"><button onclick="showDetails1()">View Details</button></div>
+                    </div>
+                    <div class= "details" id="details1">
+                        <p>Product name: <b><i>Ties</i></b><span onclick="hideDetails1()">&#x2715</span></p>
+                        <p>Product price: <b><i>2500 naira</i></b></p>
+                        <p>Product category: <b><i>Men collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addTie()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prdct-2">
+                    <img src="men clothes.jpg" alt="men clothes">
+                    <div>
+                        <h3>Clothes</h3>
+                        <div class="details-btn"><button onclick="showDetails2()">View Details</button></div>
+                    </div>
+                    <div class="details2" id="details2">
+                        <p>Product name: <b><i>Clothes</i></b><span onclick="hideDetails2()">&#x2715</span></p>
+                        <p>Product price: <b><i>17500 naira</i></b></p>
+                        <p>Product category: <b><i>Men collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addClothe()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prdct-2">
+                    <img src="women bag.jpg" alt="women bag">
+                    <div>
+                        <h3>Bags</h3>
+                        <div class="details-btn" onclick="showDetails3()"><button>View Details</button></div>
+                    </div>
+                    <div class="details2" id="details3">
+                        <p>Product name: <b><i>Bags</i></b><span onclick="hideDetails3()">&#x2715</span></p>
+                        <p>Product price: <b><i>15500 naira</i></b></p>
+                        <p>Product category: <b><i>Women collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addBag()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="prdct-2">
+                    <img src="fragrance.jpg" alt="fragrance/perfume">
+                    <div>
+                        <h3>Fragrances/Perfumes</h3>
+                        <div class="details-btn"><button onclick="showDetails4()">View Details</button></div>
+                    </div>
+                    <div class="details2" id="details4">
+                        <p>Product name: <b><i>Fragrance/Perfume</i></b><span onclick="hideDetails4()">&#x2715</span></p>
+                        <p>Product price: <b><i>10500 naira</i></b></p>
+                        <p>Product category: <b><i>Men & Women collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addFragrance()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="product-imgs-row2">
+                <div class="prdct-1">
+                    <img src="belts.jpg" alt="belts">
+                    <div>
+                        <h3>Belts</h3>
+                        <div class="details-btn"><button onclick="showDetails5()">View Details</button></div>
+                    </div>
+                    <div class= "details" id="details5">
+                        <p>Product name: <b><i>Belts</i></b><span onclick="hideDetails5()">&#x2715</span></p>
+                        <p>Product price: <b><i>1000 naira</i></b></p>
+                        <p>Product category: <b><i>Men & Women collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addBelt()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prdct-1">
+                    <img src="shoes.jpg" alt="shoes">
+                    <div>
+                        <h3>Shoes</h3>
+                        <div class="details-btn"><button onclick="showDetails6()">View Details</button></div>
+                    </div>
+                    <div class= "details" id="details6">
+                        <p>Product name: <b><i>Shoes</i></b><span onclick="hideDetails6()">&#x2715</span></p>
+                        <p>Product price: <b><i>11500 naira</i></b></p>
+                        <p>Product category: <b><i>Men & Women collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addShoe()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prdct-1">
+                    <img src="wristWatch.jpg" alt="wristwatch">
+                    <div>
+                        <h3>Wrist Watch</h3>
+                        <div class="details-btn"><button onclick="showDetails7()">View Details</button></div>
+                    </div>
+                    <div class= "details" id="details7">
+                        <p>Product name: <b><i>Wrist Watches</i></b><span onclick="hideDetails7()">&#x2715</span></p>
+                        <p>Product price: <b><i>25500 naira</i></b></p>
+                        <p>Product category: <b><i>Men collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addWatch()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="prdct-1">
+                    <img src="sunShade.jpg" alt="shoes">
+                    <div>
+                        <h3>Sunglasses</h3>
+                        <div class="details-btn"><button onclick="showDetails8()">View Details</button></div>
+                    </div>
+                    <div class= "details" id="details8">
+                        <p>Product name: <b><i>Sunglasses</i></b><span onclick="hideDetails8()">&#x2715</span></p>
+                        <p>Product price: <b><i>7500 naira</i></b></p>
+                        <p>Product category: <b><i>Men & Women collections</i></b></p>
+                        <div class="close-btn">
+                        <button onclick="addGlass()">Add to Cart <span>&#128722</span></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            
+        </div>
+
+    </div>
+    <div class="cart-row" id="cart-row">
+        <div>
+            <h1>My Cart</h1>
+        </div>
+        
+        <!-- <div id="cart-dtls" class="cart-dtls">
+         <p>Cart is empty! Place your order(s) by viewing details of product and adding your choice(s) to your cart</p>
+        </div> -->
+        <ul class="cart-content" id="cart-list">
+        </ul>
+    </div>
+
+
+
+
+    <div class="about-us" id="about-us">
+        <div>
+            <h1>About Us</h1>
+        </div>
+        <div class="about-us-content">
+            <p class="first-paragraph">
+                At Vista, we pride ourselves on being more than just an e-commerce
+                patform. We are a curated market place dedicated to fulfilling your lifestyle
+                needs with utmost sophistication and elegance.
+            </p>
+
+            <h2>What We Offer</h2>
+
+            <p>From trendsetting apparel that resonates with comtemporary fashion sensibilities
+                to state-of-the art electronics that enhance your everyday experiences, Vista is your one-stop
+                destination for curated excellence. Our diverse product portfolio encompasses a wide array of categories,
+                including fashion accessories that add flair to your ensemble, beauty and personal care essentials that pamper and rejuvenate stylish
+                footwear that merges comfort with style and cutting-edge electronics that redefine convenience.
+            </p>
+
+            <h2>Why Choose Us</h2>
+            <p>
+                <ul>
+                    <li>Curated Excellence: Each product in our collection undergoes rigorous quality checks and processes to ensure it meets our standards</li>
+                    <li>Customer-centric Approach: We priopritize your satisfaction and strive to provide a seamless shopping experience, from browsing to delivery</li>
+                    <li>Innovation and Trends: Stay ahead of the curve with our carefully-curated selections that reflect the latest trends and innovations in fashion
+                        and technology.  </li>
+                </ul>
+            </p>
+
+            <h2>Join Our Community</h2>
+            <p>At Vista, we believe in fostering a community of like-minded individuals who share a passion for style quality and innovation. 
+                Join us on this exicting journey and let Vista be your trusted partner in curating a lifestyle that speaks volume about who you are. </p>
+        </div>
+            <div class="last-paragraph">
+                <p>Thank you for choosing Vista. We look forward  to serving you with experience, elegance and unparalleled sophistication.</p>
+            </div>
+        
+    </div>
+
+    <div class="contact-info" id="contact-info">
+        <h1>Contact Us</h1>
+        <div>
+            <h3>Vista Headquarters</h3>
+            <p>123 Allen Avenue</p>
+            <p>Ikeja, Lagos State</p>
+        </div>
+
+        <div>
+            <h3>Customer Service Hours</h3>
+            <p>Monday - Friday: 9:00am - 6:00pm (Local Time)</p>
+            <p>Saturday: 10:00am - 4:00pm (Local Time)</p>
+        </div>
+
+        <div>
+            <h3>Customer Service Email</h3>
+            <p>customerservice@vista.com<br></p>
+            <h3>General Inquiries</h3>
+            <p>info@vista.com</p>
+            <h3>Phone</h3>
+            <p>Mail Line: +1(123)456-7890</p>
+            <p>Toll Line: 1-800-123-4567</p>
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <h3>Feedback & Support</h3>
+            <p>We value your feedback! For any product-related queries, feedback, or support, please reach out 
+                to our dedicated customer service team and wil be happy to assist you.
+            </p>
+        </div>
+    </div>
+
+    <div class="inputDtls">
+        <input value="2500" name="Product Name - Ties | Product Price - 2500 naira | Product Category - Men Collections" id="product1">
+        <input value="17500" name="Product Name - Clothes | Product Price - 17500 naira | Product Category - Men Collections" id="product2">
+        <input value="15500" name="Product Name - Bags | Product Price - 15500 naira | Product Category - Women Collections" id="product3">
+        <input value="10500" name="Product Name - Fragrances/Perfumes | Product Price - 10500 naira | Product Category - Men & Women Collections" id="product4">
+        <input value="1000" name="Product Name - Belts | Product Price - 1000 naira | Product Category - Men & Women Collections" id="product5">
+        <input value="11500" name="Product Name - Shoes | Product Price - 11500 naira | Product Category - Men & Women Collections" id="product6">
+        <input value="25500" name="Product Name - Wrist Watches | Product Price - 25500 naira | Product Category - Men & Women Collections" id="product7">
+        <input value="7500" name="Product Name - Sunglasses | Product Price - 7500 naira | Product Category - Men & Women Collections" id="product8">
+    </div>   
+
+
+    <footer class="footer">
+     <div class="footer-content">
+         <div>
+            <h1>Vista</h1>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <!-- <h3>Quick Links</h3> -->
+                <li><a href="">Home</a></li>
+                <li><a href="#row2">Our Products</a></li>
+                <li><a href="#cart-row">Cart</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Designed by Samuel E. A.</h2>
+        </div>  
+    </div>
+    </footer>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
