@@ -514,6 +514,15 @@ html {
 
 /* Media Queries */
 @media screen and (max-width: 375px){
+    .Intro-text {
+
+        width: 50%;
+        height: 4px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        background-color: red;
+    }
     .navbar {
         display: flex;
         justify-content: space-between; 
@@ -552,6 +561,7 @@ html {
         margin: 22px 20px 0px 0px;
         cursor: pointer;
         display: none;
+        
     }
     .Intro-text h1 {
         margin-top: 145px;
@@ -565,7 +575,7 @@ html {
     }
     .Intro-text button {
 
-        margin-top: 450px;
+        margin-top: 430px;
         margin-left: 20px;
         font-size: 18px;
         width: 110px;
